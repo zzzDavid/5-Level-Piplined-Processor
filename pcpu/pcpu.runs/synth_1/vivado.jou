@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed May 23 07:09:17 2018
+# Process ID: 7816
+# Current directory: D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/pcpu/pcpu.runs/synth_1
+# Command line: vivado.exe -log processor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor.tcl
+# Log file: D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/pcpu/pcpu.runs/synth_1/processor.vds
+# Journal file: D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/pcpu/pcpu.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source processor.tcl -notrace

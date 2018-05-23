@@ -1,0 +1,23 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/cpu_part.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_part
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_part
+WARNING: [VRFC 10-2421] module cpu_part is previously defined, ignoring this definition [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/cpu_part.v:94]
+INFO: [VRFC 10-311] analyzing module data_mem
+WARNING: [VRFC 10-2421] module data_mem is previously defined, ignoring this definition [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/data_mem.v:2]
+INFO: [VRFC 10-311] analyzing module instr_mem
+WARNING: [VRFC 10-2421] module instr_mem is previously defined, ignoring this definition [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:3]
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/t_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_part
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-311] analyzing module processor
+WARNING: [VRFC 10-2421] module processor is previously defined, ignoring this definition [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/processor.v:8]
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-311] analyzing module t_processor

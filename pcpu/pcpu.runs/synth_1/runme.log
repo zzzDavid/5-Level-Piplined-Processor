@@ -1,0 +1,819 @@
+
+*** Running vivado
+    with args -log processor.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source processor.tcl -notrace
+Command: synth_design -top processor -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8736 
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module cpu_part [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/cpu_part.v:94]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module data_mem [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/data_mem.v:2]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module instr_mem [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:3]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 401.734 ; gain = 111.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'processor' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/processor.v:8]
+INFO: [Synth 8-638] synthesizing module 'cpu_part' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/cpu_part.v:94]
+INFO: [Synth 8-256] done synthesizing module 'cpu_part' (1#1) [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/cpu_part.v:94]
+INFO: [Synth 8-638] synthesizing module 'instr_mem' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:3]
+INFO: [Synth 8-256] done synthesizing module 'instr_mem' (2#1) [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:3]
+INFO: [Synth 8-638] synthesizing module 'data_mem' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/data_mem.v:2]
+INFO: [Synth 8-256] done synthesizing module 'data_mem' (3#1) [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/data_mem.v:2]
+INFO: [Synth 8-256] done synthesizing module 'processor' (4#1) [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/processor.v:8]
+WARNING: [Synth 8-3331] design data_mem has unconnected port clock
+WARNING: [Synth 8-3331] design cpu_part has unconnected port select_y[3]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:22 ; elapsed = 00:00:33 . Memory (MB): peak = 937.348 ; gain = 646.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 937.348 ; gain = 646.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 937.348 ; gain = 646.660
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "gr_reg[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gr_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gr_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gr_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gr_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gr_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gr_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gr_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "reg_A" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "zf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dw0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element pc_reg was removed.  [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/cpu_part.v:113]
+INFO: [Synth 8-5546] ROM "d_mem_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[0]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[255]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[254]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[253]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[252]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[251]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[250]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[249]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[248]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[247]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[246]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[245]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[244]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[243]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[242]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[241]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[240]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[239]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[238]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[237]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[236]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[235]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[234]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[233]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[232]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[231]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[230]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[229]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[228]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[227]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[226]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[225]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[224]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[223]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[222]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[221]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[220]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[219]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[218]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[217]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[216]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[215]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[214]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[213]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[212]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[211]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[210]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[209]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[208]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[207]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[206]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[205]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[204]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[203]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[202]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[201]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[200]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[199]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[198]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[197]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[196]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[195]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[194]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[193]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[192]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[191]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[190]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[189]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[188]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[187]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[186]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[185]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[184]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[183]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[182]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[181]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[180]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[179]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[178]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[177]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[176]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[175]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[174]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[173]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[172]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[171]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[170]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[169]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[168]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[167]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[166]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[165]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[164]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[163]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[162]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[161]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[160]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[159]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[158]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[157]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'i_mem_reg[156]' [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v:8]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:01 ; elapsed = 00:01:15 . Memory (MB): peak = 1001.813 ; gain = 711.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 4     
+	   3 Input     17 Bit       Adders := 1     
+	   4 Input     17 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input     17 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 18    
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 9     
+	 193 Input     16 Bit        Muxes := 5     
+	 193 Input     15 Bit        Muxes := 7     
+	 193 Input     14 Bit        Muxes := 24    
+	 193 Input     13 Bit        Muxes := 42    
+	 193 Input     12 Bit        Muxes := 112   
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 335   
+	   4 Input      1 Bit        Muxes := 1     
+	 193 Input      1 Bit        Muxes := 65    
+	 384 Input      1 Bit        Muxes := 191   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cpu_part 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 4     
+	   3 Input     17 Bit       Adders := 1     
+	   4 Input     17 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input     17 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 18    
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 9     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	   4 Input      1 Bit        Muxes := 1     
+Module instr_mem 
+Detailed RTL Component Info : 
++---Muxes : 
+	 193 Input     16 Bit        Muxes := 5     
+	 193 Input     15 Bit        Muxes := 7     
+	 193 Input     14 Bit        Muxes := 24    
+	 193 Input     13 Bit        Muxes := 42    
+	 193 Input     12 Bit        Muxes := 112   
+	 193 Input      1 Bit        Muxes := 65    
+	   2 Input      1 Bit        Muxes := 256   
+	 384 Input      1 Bit        Muxes := 191   
+Module data_mem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 64    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "zf0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element pc_reg was removed.  [D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/cpu_part.v:113]
+INFO: [Synth 8-5546] ROM "d_mem_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_mem_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design data_mem has unconnected port clock
+WARNING: [Synth 8-3331] design cpu_part has unconnected port select_y[3]
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[255][3]' (LD) to 'imem/i_mem_reg[255][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[254][3]' (LD) to 'imem/i_mem_reg[254][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[253][3]' (LD) to 'imem/i_mem_reg[253][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[252][3]' (LD) to 'imem/i_mem_reg[252][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[251][3]' (LD) to 'imem/i_mem_reg[251][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[250][3]' (LD) to 'imem/i_mem_reg[250][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[249][3]' (LD) to 'imem/i_mem_reg[249][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[248][3]' (LD) to 'imem/i_mem_reg[248][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[247][3]' (LD) to 'imem/i_mem_reg[247][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[246][3]' (LD) to 'imem/i_mem_reg[246][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[245][3]' (LD) to 'imem/i_mem_reg[245][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[244][3]' (LD) to 'imem/i_mem_reg[244][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[243][3]' (LD) to 'imem/i_mem_reg[243][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[242][3]' (LD) to 'imem/i_mem_reg[242][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[241][3]' (LD) to 'imem/i_mem_reg[241][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[240][3]' (LD) to 'imem/i_mem_reg[240][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[239][3]' (LD) to 'imem/i_mem_reg[239][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[238][3]' (LD) to 'imem/i_mem_reg[238][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[237][3]' (LD) to 'imem/i_mem_reg[237][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[236][3]' (LD) to 'imem/i_mem_reg[236][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[235][3]' (LD) to 'imem/i_mem_reg[235][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[234][3]' (LD) to 'imem/i_mem_reg[234][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[233][3]' (LD) to 'imem/i_mem_reg[233][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[232][3]' (LD) to 'imem/i_mem_reg[232][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[231][3]' (LD) to 'imem/i_mem_reg[231][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[230][3]' (LD) to 'imem/i_mem_reg[230][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[229][3]' (LD) to 'imem/i_mem_reg[229][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[228][3]' (LD) to 'imem/i_mem_reg[228][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[227][3]' (LD) to 'imem/i_mem_reg[227][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[226][3]' (LD) to 'imem/i_mem_reg[226][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[225][3]' (LD) to 'imem/i_mem_reg[225][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[224][3]' (LD) to 'imem/i_mem_reg[224][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[223][3]' (LD) to 'imem/i_mem_reg[223][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[222][3]' (LD) to 'imem/i_mem_reg[222][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[221][3]' (LD) to 'imem/i_mem_reg[221][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[220][3]' (LD) to 'imem/i_mem_reg[220][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[219][3]' (LD) to 'imem/i_mem_reg[219][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[218][3]' (LD) to 'imem/i_mem_reg[218][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[217][3]' (LD) to 'imem/i_mem_reg[217][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[216][3]' (LD) to 'imem/i_mem_reg[216][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[215][3]' (LD) to 'imem/i_mem_reg[215][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[214][3]' (LD) to 'imem/i_mem_reg[214][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[213][3]' (LD) to 'imem/i_mem_reg[213][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[212][3]' (LD) to 'imem/i_mem_reg[212][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[211][3]' (LD) to 'imem/i_mem_reg[211][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[210][3]' (LD) to 'imem/i_mem_reg[210][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[209][3]' (LD) to 'imem/i_mem_reg[209][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[208][3]' (LD) to 'imem/i_mem_reg[208][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[207][3]' (LD) to 'imem/i_mem_reg[207][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[206][3]' (LD) to 'imem/i_mem_reg[206][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[205][3]' (LD) to 'imem/i_mem_reg[205][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[204][3]' (LD) to 'imem/i_mem_reg[204][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[203][3]' (LD) to 'imem/i_mem_reg[203][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[202][3]' (LD) to 'imem/i_mem_reg[202][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[201][3]' (LD) to 'imem/i_mem_reg[201][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[200][3]' (LD) to 'imem/i_mem_reg[200][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[199][3]' (LD) to 'imem/i_mem_reg[199][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[198][3]' (LD) to 'imem/i_mem_reg[198][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[197][3]' (LD) to 'imem/i_mem_reg[197][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[196][3]' (LD) to 'imem/i_mem_reg[196][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[195][3]' (LD) to 'imem/i_mem_reg[195][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[194][3]' (LD) to 'imem/i_mem_reg[194][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[193][3]' (LD) to 'imem/i_mem_reg[193][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[192][3]' (LD) to 'imem/i_mem_reg[192][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[191][3]' (LD) to 'imem/i_mem_reg[191][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[190][3]' (LD) to 'imem/i_mem_reg[190][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[189][3]' (LD) to 'imem/i_mem_reg[189][4]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[188][3]' (LD) to 'imem/i_mem_reg[188][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[187][3]' (LD) to 'imem/i_mem_reg[187][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[186][3]' (LD) to 'imem/i_mem_reg[186][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[185][3]' (LD) to 'imem/i_mem_reg[185][4]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[184][3]' (LD) to 'imem/i_mem_reg[184][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[183][3]' (LD) to 'imem/i_mem_reg[183][1]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[182][3]' (LD) to 'imem/i_mem_reg[182][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[181][3]' (LD) to 'imem/i_mem_reg[181][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[180][3]' (LD) to 'imem/i_mem_reg[180][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[179][3]' (LD) to 'imem/i_mem_reg[179][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[178][3]' (LD) to 'imem/i_mem_reg[178][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[177][3]' (LD) to 'imem/i_mem_reg[177][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[176][3]' (LD) to 'imem/i_mem_reg[176][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[175][3]' (LD) to 'imem/i_mem_reg[175][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[174][3]' (LD) to 'imem/i_mem_reg[174][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[173][3]' (LD) to 'imem/i_mem_reg[173][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[172][3]' (LD) to 'imem/i_mem_reg[172][5]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[171][3]' (LD) to 'imem/i_mem_reg[171][1]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[170][3]' (LD) to 'imem/i_mem_reg[170][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[169][3]' (LD) to 'imem/i_mem_reg[169][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[168][3]' (LD) to 'imem/i_mem_reg[168][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[167][3]' (LD) to 'imem/i_mem_reg[167][1]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[166][3]' (LD) to 'imem/i_mem_reg[166][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[165][3]' (LD) to 'imem/i_mem_reg[165][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[164][3]' (LD) to 'imem/i_mem_reg[164][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[163][3]' (LD) to 'imem/i_mem_reg[163][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[162][3]' (LD) to 'imem/i_mem_reg[162][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[161][3]' (LD) to 'imem/i_mem_reg[161][2]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[160][3]' (LD) to 'imem/i_mem_reg[160][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[159][3]' (LD) to 'imem/i_mem_reg[159][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[158][3]' (LD) to 'imem/i_mem_reg[158][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[157][3]' (LD) to 'imem/i_mem_reg[157][0]'
+INFO: [Synth 8-3886] merging instance 'imem/i_mem_reg[156][3]' (LD) to 'imem/i_mem_reg[156][0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[177][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[97][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[189][14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[255][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[254][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[253][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[252][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[251][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[250][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[249][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[248][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[247][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[246][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[245][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[244][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[243][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[242][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[241][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[240][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[239][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[238][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[237][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[236][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[235][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[234][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[233][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[232][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[231][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[230][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[229][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[228][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[227][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[226][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[225][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[224][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[223][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[222][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[221][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[220][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[219][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[218][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[217][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[216][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[215][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[214][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[213][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[212][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[211][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[210][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[209][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[208][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[207][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[206][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[205][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[204][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[203][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[202][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[201][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[200][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[199][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[198][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[197][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[196][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[195][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[194][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[193][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[192][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[191][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[190][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[184][9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[42][9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (imem/\i_mem_reg[8][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[185][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[183][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[182][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[178][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[176][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[172][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[171][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[167][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[166][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[162][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[161][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[157][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[156][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[152][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[151][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[147][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[146][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[142][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[141][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[137][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[136][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[132][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[131][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[127][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[126][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[122][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem/\i_mem_reg[121][10] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (ex_ir_reg[7]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (ex_ir_reg[6]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (ex_ir_reg[5]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (ex_ir_reg[4]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (ex_ir_reg[3]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (ex_ir_reg[2]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (ex_ir_reg[1]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (ex_ir_reg[0]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (mem_ir_reg[7]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (mem_ir_reg[6]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (mem_ir_reg[5]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (mem_ir_reg[4]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (mem_ir_reg[3]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (mem_ir_reg[2]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (mem_ir_reg[1]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (mem_ir_reg[0]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (wb_ir_reg[7]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (wb_ir_reg[6]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (wb_ir_reg[5]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (wb_ir_reg[4]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (wb_ir_reg[3]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (wb_ir_reg[2]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (wb_ir_reg[1]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (wb_ir_reg[0]) is unused and will be removed from module cpu_part.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[255][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[255][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[254][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[254][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[253][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[253][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[252][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[252][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[251][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[251][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[250][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[250][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[249][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[249][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[248][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[248][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[247][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[247][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[246][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[246][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[245][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[245][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[244][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[244][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[243][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[243][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[242][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[242][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[241][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[241][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[240][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[240][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[239][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[239][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[238][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[238][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[237][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[237][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[236][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[236][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[235][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[235][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[234][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[234][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[233][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[233][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[232][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[232][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[231][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[231][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[230][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[230][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[229][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[229][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[228][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[228][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[227][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[227][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[226][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[226][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[225][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[225][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[224][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[224][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[223][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[223][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[222][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[222][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[221][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[221][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[220][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[220][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[219][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[219][8]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[218][11]) is unused and will be removed from module instr_mem.
+WARNING: [Synth 8-3332] Sequential element (i_mem_reg[218][8]) is unused and will be removed from module instr_mem.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:01:50 . Memory (MB): peak = 1039.395 ; gain = 748.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:01:51 . Memory (MB): peak = 1039.395 ; gain = 748.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:36 ; elapsed = 00:01:52 . Memory (MB): peak = 1039.395 ; gain = 748.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:54 . Memory (MB): peak = 1039.395 ; gain = 748.707
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:01:54 . Memory (MB): peak = 1039.395 ; gain = 748.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:38 ; elapsed = 00:01:54 . Memory (MB): peak = 1039.395 ; gain = 748.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:38 ; elapsed = 00:01:54 . Memory (MB): peak = 1039.395 ; gain = 748.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:38 ; elapsed = 00:01:54 . Memory (MB): peak = 1039.395 ; gain = 748.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:38 ; elapsed = 00:01:54 . Memory (MB): peak = 1039.395 ; gain = 748.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    28|
+|3     |LUT1   |    18|
+|4     |LUT2   |    69|
+|5     |LUT3   |    31|
+|6     |LUT4   |    41|
+|7     |LUT5   |   186|
+|8     |LUT6   |   681|
+|9     |MUXF7  |   188|
+|10    |MUXF8  |    64|
+|11    |FDRE   |   281|
+|12    |LD     |   896|
+|13    |LDC    |    91|
+|14    |LDP    |    53|
+|15    |IBUF   |     7|
+|16    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |  2652|
+|2     |  dmem   |data_mem  |  1505|
+|3     |  imem   |instr_mem |    52|
+|4     |  pcpu   |cpu_part  |  1070|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:38 ; elapsed = 00:01:54 . Memory (MB): peak = 1039.395 ; gain = 748.707
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 751 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:38 ; elapsed = 00:01:54 . Memory (MB): peak = 1039.395 ; gain = 748.707
+Synthesis Optimization Complete : Time (s): cpu = 00:01:38 ; elapsed = 00:01:54 . Memory (MB): peak = 1039.395 ; gain = 748.707
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1327 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 16 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1040 instances were transformed.
+  LD => LDCE: 896 instances
+  LDC => LDCE: 75 instances
+  LDC => LDCE (inverted pins: G): 16 instances
+  LDP => LDPE: 53 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+330 Infos, 206 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:49 ; elapsed = 00:02:08 . Memory (MB): peak = 1048.887 ; gain = 770.891
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/pcpu/pcpu.runs/synth_1/processor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file processor_utilization_synth.rpt -pb processor_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 1048.887 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 23 07:11:37 2018...

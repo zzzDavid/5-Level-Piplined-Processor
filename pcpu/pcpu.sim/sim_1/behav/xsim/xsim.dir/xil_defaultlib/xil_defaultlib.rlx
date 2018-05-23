@@ -1,0 +1,10 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/cpu_part.v,1527026432,verilog,,D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/data_mem.v,,cpu_part,,,,,,,,
+D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/data_mem.v,1526977526,verilog,,D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v,,data_mem,,,,,,,,
+D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v,1527021062,verilog,,D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/processor.v,,instr_mem,,,,,,,,
+D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/pcpu/pcpu.sim/sim_1/behav/xsim/glbl.v,1513215260,verilog,,,,glbl,,,,,,,,
+D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/processor.v,1526976366,verilog,,D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/t_processor.v,D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/cpu_part.v;D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/data_mem.v;D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v,processor,,,,,,,,
+D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/t_processor.v,1527018168,verilog,,,D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/processor.v;D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/data_mem.v;D:/Documents/Academy/2018 spring/Digital IC Design/Labs/pcpu/trial3/instr_mem.v,t_processor,,,,,,,,
