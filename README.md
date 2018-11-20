@@ -1,4 +1,4 @@
-# 5-Level Piplined CPU
+# An Implementation of 5-Level Piplined Central Processing Unit
 ```
 University: Sun Yat-sen University
 Cousrse: Digital Integrated Circuit Design
