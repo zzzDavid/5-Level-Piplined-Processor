@@ -1,13 +1,18 @@
+# 5-Level Piplined CPU
+```
 University: Sun Yat-sen University
 Cousrse: Digital Integrated Circuit Design
 Mid-term Project: Piplined Processor with Hazard
-
+```
+``
 IDE: Vivado 2017.4
+```
 
-Design Description: 
+## Design Description: 
 5-level piplined processor, with 8 general registers.32 operations are defined, of which 27 operations are tested by now.The other 5 is defined by me but not yet tested. Further explanation available in course slides and student report.
 
-File Description:
+## File Description:
+```
 cpu_part: computation units of processor, main design file, work with data memory and instruction memory.
 
 cpu_tb_part: simulation file for cpu_part. It performs value assignment operation for cpu_part, which in real life is the job of data memory and instruction memory. 
@@ -25,8 +30,8 @@ instr_mem: an implementation of instruction memory. Instructions are written ins
 dmem.mem.master: output file of t_processor, which contains desired output of our processor. 
 
 time.xdc: time constriction file of processor, used in timing analysis. Change the clock period inside to approach maximum clock frequency. 
+```
 
-
-File Hierarchy:
+## File Hierarchy:
 
 A complete Vivado Project is contained in "pcpu" folder. With synthesis completed. File Hierarchy can be viewed inside. 
