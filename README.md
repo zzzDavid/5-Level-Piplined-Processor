@@ -4,7 +4,7 @@ University: Sun Yat-sen University
 Cousrse: Digital Integrated Circuit Design
 Mid-term Project: Piplined Processor with Hazard
 ```
-``
+```
 IDE: Vivado 2017.4
 ```
 
